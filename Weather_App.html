@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <header class="container">
+      <div class="page-header">
+        <div class="logo">
+          <p>NA</p>
+        </div>
+        <input type="checkbox" id="click" />
+        <label for="click" class="mainicon">
+          <div class="menu">
+            <i class="bx bx-menu"></i>
+          </div>
+        </label>
+        <ul>
+          <li><a href="index.html" class="active" style="--navAni: 1">Home</a></li>
+          <li><a href="#" style="--navAni: 2">About</a></li>
+          <li><a href="#" style="--navAni: 3">Skills</a></li>
+          <li>
+            <a href="Weather_App.html" style="--navAni: 4">Weather App</a>
+          </li>
+          <li><a href="#" style="--navAni: 5">Contact</a></li>
+        </ul>
+        <label class="mode">
+          <input type="checkbox" id="darkModeToggle" />
+          <i class="bx bxs-moon"></i>
+        </label>
+      </div>
+    </header>
+    <div class="card">
+      <div class="search">
+        <input type="text" placeholder="Enter City Name" spellcheck="false" />
+        <button><img src="images/search.png" alt="search" /></button>
+      </div>
+      <div class="error">
+        <p>Invalid City Name</p>
+      </div>
+      <div class="empty-error">
+        <p>Please enter the city name</p>
+      </div>
+      <div class="weather">
+        <div class="date">
+          <p>Date:</p>
+          <p class="dt"></p>
+        </div>
+        <div class="details1">
+          <div class="col1">
+            <img src="images/rising-sun.png" alt="" />
+            <div>
+              <p>Sun-Rise</p>
+              <p class="sun-rise"></p>
+            </div>
+          </div>
+          <div class="col1">
+            <img src="images/sun-set.png" alt="" />
+            <div>
+              <p>Sun-Set</p>
+              <p class="sun-set"></p>
+            </div>
+          </div>
+        </div>
+        <img src="images/drizzle.png" alt="" class="weather-icon" />
+        <h1 class="temp">°C</h1>
+        <h2 class="city"></h2>
+        <div class="details">
+          <div class="col">
+            <img src="images/humidity.png" alt="" />
+            <div>
+              <p class="humidity">%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="images/wind.png" alt="" />
+            <div>
+              <p class="wind">Km/hr</p>
+              <p>wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
